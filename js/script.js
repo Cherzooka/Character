@@ -1,5 +1,3 @@
-window.onload = function() {
-
 const { createApp, ref } = Vue
 
 createApp ({
@@ -10,4 +8,3 @@ createApp ({
     }
   }
 }).mount('#app')
-}
