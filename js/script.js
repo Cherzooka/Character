@@ -1,7 +1,10 @@
-const { createApp } = Vue
-const {createVuetify } = Vuetify
+const { createApp, ref } = Vue
 
-const vuetify = createVuetify()
-
-const app = createApp()
-app.use(vuetify).mount('#app')
+createApp ({
+  setup() {
+    const message = ref('Hello vue!')
+    return {
+      message
+    }
+  }
+}).mount('#app')
