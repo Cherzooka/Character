@@ -1,11 +1,3 @@
-const { createApp } = Vue
-const { createVuetify } = Vuetify
-
-const vuetify = createVuetify()
-
-const app = createApp()
-app.use(vuetify).mount('#app')
-
 <template>
   <v-app id="inspire">
     <v-app-bar flat>
@@ -96,3 +88,11 @@ app.use(vuetify).mount('#app')
       ],
     }),
   }
+
+const { createApp } = Vue
+const { createVuetify } = Vuetify
+
+const vuetify = createVuetify()
+
+const app = createApp()
+app.use(vuetify).mount('#app')
